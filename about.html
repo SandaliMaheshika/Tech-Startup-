@@ -33,6 +33,22 @@
             text-decoration: none;
             font-size: 18px;
         }
+
+        header img {
+            width: 100vw;
+            height: auto;
+        }
+
+        .header-content{
+            position: absolute ;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -46,9 +62,11 @@
     <header>
         <img src="assets/imgs/group-diverse-business-people.jpg" alt="images">
         <div>
-            <h1>About Us</h1>
-            <p>We are a tech startup dedicated to creating innovative solutions for businesses. Our team is passionate about technology and committed to delivering high-quality products that meet the needs of our clients. 
-                We believe in fostering a collaborative and inclusive work environment where creativity and innovation can thrive.</p>
+            <div class="header-content">
+                <h1>About Us</h1>
+                <p>We are a tech startup dedicated to creating innovative solutions for businesses. Our team is passionate about technology and committed to delivering high-quality products that meet the needs of our clients. 
+                    We believe in fostering a collaborative and inclusive work environment where creativity and innovation can thrive.</p>
+            </div>
     
         </div>
     </header>
