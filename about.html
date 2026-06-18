@@ -5,113 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech startup</title>
     <style>
-        body {
-            margin: 0;
+        body
+        {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f8f9fb;
+            margin: 0;
+            padding: 0;
         }
-
         nav {
-            background: #fff;
-            border-bottom: 1px solid #ddd;
-            padding: 12px 24px;
+            background-color: #333;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         nav ul {
-            margin: 0;
-            padding: 0;
             list-style: none;
             display: flex;
-            gap: 16px;
+            gap: 20px;
         }
 
+        nav li {
+            display: inline;
+        }
         nav a {
+            color: white;
             text-decoration: none;
-            color: #333;
-            font-weight: 600;
-        }
-
-        header {
-            max-width: 900px;
-            margin: 24px auto;
-            padding: 0 24px;
-            text-align: center;
-        }
-
-        header img {
-            width: 100%;
-            max-height: 320px;
-            object-fit: cover;
-            border-radius: 12px;
-            display: block;
-            margin: 0 auto 18px;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            color: #1a1f36;
-        }
-
-        header p {
-            max-width: 720px;
-            margin: 16px auto 0;
-            color: #555;
-        }
-
-        main {
-            max-width: 900px;
-            margin: 0 auto 40px;
-            padding: 0 24px;
-        }
-
-        section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
-            margin-bottom: 20px;
-        }
-
-        section h2 {
-            margin-top: 0;
-            color: #1a1f36;
-        }
-
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 18px;
-            margin-top: 18px;
-        }
-
-        .team-card {
-            background: #f7f9fc;
-            border-radius: 14px;
-            padding: 18px;
-            text-align: center;
-            border: 1px solid #e5e9f2;
-        }
-
-        .team-card img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 14px;
-        }
-
-        .team-card h3 {
-            margin: 0 0 10px;
-            font-size: 1.15rem;
-            color: #111827;
-        }
-
-        .team-card p {
-            margin: 0;
-            color: #555;
+            font-size: 18px;
         }
     </style>
 </head>
@@ -125,10 +45,12 @@
     </nav>
     <header>
         <img src="assets/imgs/group-diverse-business-people.jpg" alt="images">
-        <h1>About Us</h1>
-        <p>We are a tech startup dedicated to creating innovative solutions for businesses. Our team is passionate about technology and committed to delivering high-quality products that meet the needs of our clients. 
-            We believe in fostering a collaborative and inclusive work environment where creativity and innovation can thrive.</p>
-
+        <div>
+            <h1>About Us</h1>
+            <p>We are a tech startup dedicated to creating innovative solutions for businesses. Our team is passionate about technology and committed to delivering high-quality products that meet the needs of our clients. 
+                We believe in fostering a collaborative and inclusive work environment where creativity and innovation can thrive.</p>
+    
+        </div>
     </header>
     <main>
         <section>
@@ -146,20 +68,18 @@
 
         <section>
             <h2>Meet Our Team</h2>
-            <div class="team-grid">
-                <div class="team-card">
-                    <img src="assets/imgs/profile.png" alt="profile image">
-                    <h3>Trump</h3>
-                    <p>CEO</p>
-                </div>
-                <div class="team-card">
-                    <img src="assets/imgs/profile.png" alt="profile image">
-                    <h3>John Doe</h3>
-                    <p>CTO</p>
-                </div>
-            </div>
-        </section>
+            <div>
+                <img src="assets/imgs/profile.png" alt="profile image">
+                <h3>trump </h3>
+                <p>CEO</p>
 
+            </div>
+            <div>
+                <img src="assets/imgs/profile.png" alt="profile image">
+                <h3>John Doe</h3>
+                <p>CTO</p>
+        </section>
+        
     </main>
 
 </body>
